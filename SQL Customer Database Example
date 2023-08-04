@@ -1,0 +1,26 @@
+#MySQL 5.6 - Example 1 (Customer Database)
+
+create table Customers (
+  customer_id INT,
+  first_name VARCHAR (50),
+  last_name VARCHAR (50),
+  phone VARCHAR (20),
+  address VARCHAR (50),
+  city VARCHAR (50),
+  state VARCHAR (50),
+  country VARCHAR (10),
+  zip_code VARCHAR (10),
+  last_purchase_date VARCHAR (50)
+  );
+  
+insert into Customers (customer_id, first_name, last_name, phone, address, city, state, country, zip_code, last_purchase_date)
+  VALUES (1, 'Bobby', 'Dirzo', '7086667777', '3512 Tripp Street', 'New York City', 'NY', 'USA', '10499', 'March 23, 2023');
+  
+insert into Customers (customer_id, first_name, last_name, phone, address, city, state, country, zip_code, last_purchase_date)
+  VALUES (2, 'Johnny', 'Deng', '7083337777', '3514 W Winnebago St', 'Chicago', 'IL', 'USA', '60608', 'February 10th, 2023');
+  
+insert into Customers (customer_id, first_name, last_name, phone, address, city, state, country, zip_code, last_purchase_date)
+  VALUES (3, 'Ken', 'Bling', '7084567777', '19222 Kafle Ave', 'Chicago', 'IL', 'USA', '60608', 'April 16th, 2023');
+  
+insert into Customers (customer_id, first_name, last_name, phone, address, city, state, country, zip_code, last_purchase_date)
+  VALUES (4, 'Barbie', 'Yuhh', '7082317777', '19222 Dream Ave', 'Las Vegas', 'NV', 'USA', '88901', 'March 3rd, 2023');
