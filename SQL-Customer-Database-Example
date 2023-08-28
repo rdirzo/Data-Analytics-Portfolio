@@ -14,28 +14,28 @@ create table Customers (
   );
   
 insert into Customers (customer_id, first_name, last_name, phone, address, city, state, country, zip_code, last_purchase_date)
-  VALUES (1, 'Benito', 'Martinez', '7086667777', '3512 Tripp Street', 'New York City', 'NY', 'USA', '10499', 'March 23, 2023');
+  VALUES (1, 'Robert', 'Smith', '7086667207', '3512 Glenwood Street', 'New York City', 'NY', 'USA', '10499', 'March 23, 2023');
   
 insert into Customers (customer_id, first_name, last_name, phone, address, city, state, country, zip_code, last_purchase_date)
-  VALUES (2, 'Morgan', 'Wallen', '7083337777', '3514 W Winnebago St', 'Chicago', 'IL', 'USA', '60608', 'February 10th, 2023');
+  VALUES (2, 'Frank', 'Huckaby', '7083332097', '3514 W Winnebago Street', 'Chicago', 'IL', 'USA', '60608', 'February 10th, 2023');
   
 insert into Customers (customer_id, first_name, last_name, phone, address, city, state, country, zip_code, last_purchase_date)
-  VALUES (3, 'Abel', 'Tesfaye', '7084567777', '19222 Kafle Ave', 'Chicago', 'IL', 'USA', '60608', 'April 16th, 2023');
+  VALUES (3, 'Jeff', 'Bryant', '7084567777', '19000 Kafle Avenue', 'Chicago', 'IL', 'USA', '60608', 'April 16th, 2023');
   
 insert into Customers (customer_id, first_name, last_name, phone, address, city, state, country, zip_code, last_purchase_date)
-  VALUES (4, 'Aubrey', 'Graham', '7082317777', '19222 Dream Ave', 'Las Vegas', 'NV', 'USA', '88901', 'March 3rd, 2023'); 
+  VALUES (4, 'Aubrey', 'Holmes', '7082316347', '264251 Dream Avenue', 'Las Vegas', 'NV', 'USA', '88901', 'March 3rd, 2023'); 
 
 insert into Customers (customer_id, first_name, last_name, phone, address, city, state, country, zip_code, last_purchase_date)
-  VALUES (5, 'Travis', 'Scott', '7082317777', '19222 H Town Ave', 'Houston', 'TX', 'USA', '77001', 'April 26th, 2023');  
+  VALUES (5, 'Travis', 'Payne', '7082311547', '56248 Town Avenue', 'Houston', 'TX', 'USA', '77001', 'April 26th, 2023');  
 
-#Here I updated the city from New York City to Brooklyn
+#Here I updated the city from New York City to Seattle
 UPDATE Customers
-SET city = 'Brooklyn'
+SET city = 'Seattle'
 WHERE customer_id = 1;
 
 #Here I updated the street address to 2333 Fein Street
 UPDATE Customers
-SET address = '2333 Fein Street'
+SET address = '2333 Indiana Street'
 WHERE customer_id = 1;
 
 #Here I updated the city to Nashville
