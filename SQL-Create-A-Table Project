@@ -1,3 +1,5 @@
+#SQLite - Example 2 (Create a Table)
+
 CREATE TABLE friends (
    id INTEGER,
    name TEXT,
