@@ -33,7 +33,7 @@ UPDATE Customers
 SET city = 'Seattle'
 WHERE customer_id = 1;
 
-#Here I updated the street address to 2333 Fein Street
+#Here I updated the street address to 2333 Indiana Street
 UPDATE Customers
 SET address = '2333 Indiana Street'
 WHERE customer_id = 1;
