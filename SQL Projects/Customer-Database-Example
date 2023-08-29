@@ -1,6 +1,6 @@
 #MySQL 5.6 - Example 1 (Customer Database)
 
-create table Customers (
+CREATE TABLE customers (
   customer_id INT,
   first_name VARCHAR (50),
   last_name VARCHAR (50),
@@ -10,40 +10,43 @@ create table Customers (
   state VARCHAR (50),
   country VARCHAR (10),
   zip_code VARCHAR (10),
-  last_purchase_date VARCHAR (50)
+  subscription_status VARCHAR (20),
+  registration_date VARCHAR (50),
+  last_purchase_date VARCHAR (50),
+  customer_segment VARCHAR (20)
   );
   
-insert into Customers (customer_id, first_name, last_name, phone, address, city, state, country, zip_code, last_purchase_date)
-  VALUES (1, 'Robert', 'Smith', '7086667207', '3512 Glenwood Street', 'New York City', 'NY', 'USA', '10499', 'March 23, 2023');
+INSERT INTO customers (customer_id, first_name, last_name, phone, address, city, state, country, zip_code, subscription_status, registration_date, last_purchase_date, customer_segment)
+  VALUES (1, 'Robert', 'Smith', '7086667207', '3512 Glenwood Street', 'New York City', 'NY', 'USA', '10499', 'Subscribed', 'February 1st, 2022', 'March 23, 2023', 'Returning');
   
-insert into Customers (customer_id, first_name, last_name, phone, address, city, state, country, zip_code, last_purchase_date)
-  VALUES (2, 'Frank', 'Huckaby', '7083332097', '3514 W Winnebago Street', 'Chicago', 'IL', 'USA', '60608', 'February 10th, 2023');
+INSERT INTO customers (customer_id, first_name, last_name, phone, address, city, state, country, zip_code, subscription_status, registration_date,  last_purchase_date, customer_segment)
+  VALUES (2, 'Frank', 'Huckaby', '7083332097', '3514 W Winnebago Street', 'Chicago', 'IL', 'USA', '60608', 'Not Subscribed', 'January 3rd, 2023', 'February 10th, 2023', 'Returning');
   
-insert into Customers (customer_id, first_name, last_name, phone, address, city, state, country, zip_code, last_purchase_date)
-  VALUES (3, 'Jeff', 'Bryant', '7084567777', '19000 Kafle Avenue', 'Chicago', 'IL', 'USA', '60608', 'April 16th, 2023');
+INSERT INTO customers (customer_id, first_name, last_name, phone, address, city, state, country, zip_code, subscription_status, registration_date, last_purchase_date, customer_segment)
+  VALUES (3, 'Jeff', 'Bryant', '7084567777', '19000 Kafle Avenue', 'Chicago', 'IL', 'USA', '60608', 'Subscribed', 'March 27th, 2022', 'April 16th, 2023', 'New');
   
-insert into Customers (customer_id, first_name, last_name, phone, address, city, state, country, zip_code, last_purchase_date)
-  VALUES (4, 'Aubrey', 'Holmes', '7082316347', '264251 Dream Avenue', 'Las Vegas', 'NV', 'USA', '88901', 'March 3rd, 2023'); 
+INSERT INTO customers (customer_id, first_name, last_name, phone, address, city, state, country, zip_code, subscription_status, registration_date, last_purchase_date, customer_segment)
+  VALUES (4, 'Aubrey', 'Holmes', '7082316347', '264251 Dream Avenue', 'Las Vegas', 'NV', 'USA', '88901', 'Subscribed', 'February 13th, 2023', 'March 3rd, 2023', 'Returning'); 
 
-insert into Customers (customer_id, first_name, last_name, phone, address, city, state, country, zip_code, last_purchase_date)
-  VALUES (5, 'Travis', 'Payne', '7082311547', '56248 Town Avenue', 'Houston', 'TX', 'USA', '77001', 'April 26th, 2023');  
+INSERT INTO customers (customer_id, first_name, last_name, phone, address, city, state, country, zip_code, subscription_status, registration_date, last_purchase_date, customer_segment)
+  VALUES (5, 'Travis', 'Payne', '7082311547', '56248 Town Avenue', 'Houston', 'TX', 'USA', '77001', 'Not Subscribed', 'January 16th, 2023', 'April 26th, 2023', 'New');  
 
 #Here I updated the city from New York City to Seattle
-UPDATE Customers
+UPDATE customers
 SET city = 'Seattle'
 WHERE customer_id = 1;
 
 #Here I updated the street address to 2333 Indiana Street
-UPDATE Customers
+UPDATE customers
 SET address = '2333 Indiana Street'
 WHERE customer_id = 1;
 
 #Here I updated the city to Nashville
-UPDATE Customers
+UPDATE customers
 SET city = 'Nashville'
 WHERE customer_id = 2;
 
 #Here I updated the state to Tennessee
-UPDATE Customers
+UPDATE customers
 SET state = 'TN'
 WHERE customer_id = 2;
