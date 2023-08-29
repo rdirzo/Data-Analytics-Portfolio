@@ -1,37 +1,37 @@
 #SQLite - Example 2 (Create a Table)
 
-CREATE TABLE friends (
+CREATE TABLE Customers (
    id INTEGER,
    name TEXT,
    birthday DATE
 );
 
-INSERT INTO friends (id, name, birthday) 
+INSERT INTO Customers (id, name, birthday) 
 VALUES (1, 'Chase Munroe', '1940-05-30');
 
-INSERT INTO friends (id, name, birthday) 
+INSERT INTO Customers (id, name, birthday) 
 VALUES (2, 'John Smith', '1947-05-20');
 
-INSERT INTO friends (id, name, birthday) 
+INSERT INTO Customers (id, name, birthday) 
 VALUES (3, 'Carl Jones', '1945-05-10');
 
-#Here I updated John Smith first name to Robert
-UPDATE friends
+#Here I updated Customers first name to Robert
+UPDATE Customers
 SET name = 'Robert'
 WHERE id = 1;
 
 #Here I added a column named email
-ALTER TABLE friends 
+ALTER TABLE Customers 
 ADD COLUMN email TEXT; 
 
 #I added am email to Chase Munroe
-UPDATE friends
+UPDATE Customers
 SET email = 'storm@yahoo.com'
 WHERE id = 1;
 
-#Here I deleted Chase Munroe from the friends table
-DELETE FROM friends
+#Here I deleted Chase Munroe from the Customers table
+DELETE FROM Customers
 WHERE id = 1;
 
 SELECT *
-FROM friends;
+FROM Customers;
