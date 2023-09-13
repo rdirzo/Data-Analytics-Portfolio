@@ -19,3 +19,8 @@ FROM
 	orders o
 	LEFT JOIN item i ON o.item_id = i.item_id
 	LEFT JOIN address a ON o.add_id = a.add_id
+
+This code is asking the database to provide a list of orders, including 
+details like what items were ordered in each order, the price of those items,when the order was made, 
+and where it should be delivered. It's like getting a summary of all the orders made, what they contain, 
+and where they need to be sent.
