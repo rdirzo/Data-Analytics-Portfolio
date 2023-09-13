@@ -1,5 +1,5 @@
 #MySQL 5.6 - Example 1 (Customer Database)
-#In this SQL code (MySQL 5.6), I created a customer table with 5 customers that includes basic info as well as 
+#In this SQL code (MySQL 5.6), I created 5 customers that includes basic info as well as 
 related customer data such as subscription_status, registration_date, last_purchase_date, and customer_segment
 
 CREATE TABLE customers (
