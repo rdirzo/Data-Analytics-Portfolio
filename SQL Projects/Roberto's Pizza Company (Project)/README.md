@@ -5,7 +5,7 @@ In this database query and analysis task, our objective is to extract critical i
 Objectives:
 
 
-For the First Query (Customer Orders):
+For the First Query (Order Activity):
 
 Retrieve Order Information: The first part of this code focuses on retrieving vital information related to customer orders. This includes details such as order IDs, item prices, quantities ordered, item categories, item names, order creation timestamps, delivery addresses, and delivery statuses.
 
