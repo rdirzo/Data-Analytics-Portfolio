@@ -32,23 +32,3 @@ INSERT INTO customers (customer_id, first_name, last_name, phone, address, city,
 
 INSERT INTO customers (customer_id, first_name, last_name, phone, address, city, state, country, zip_code, subscription_status, registration_date, last_purchase_date, customer_segment)
   VALUES (5, 'Travis', 'Payne', '7082311547', '56248 Town Avenue', 'Houston', 'TX', 'USA', '77001', 'Not Subscribed', 'January 16th, 2023', 'April 26th, 2023', 'New');  
-
-#Here I updated the city from New York City to Seattle
-UPDATE customers
-SET city = 'Seattle'
-WHERE customer_id = 1;
-
-#Here I updated the street address to 2333 Indiana Street
-UPDATE customers
-SET address = '2333 Indiana Street'
-WHERE customer_id = 1;
-
-#Here I updated the city to Nashville
-UPDATE customers
-SET city = 'Nashville'
-WHERE customer_id = 2;
-
-#Here I updated the state to Tennessee
-UPDATE customers
-SET state = 'TN'
-WHERE customer_id = 2;
